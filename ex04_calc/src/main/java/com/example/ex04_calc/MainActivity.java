@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
 //                    int n2 = Integer.parseInt(str2);
 //                    int n3 = n1 - n2;
 
+
                     double d1 = Double.parseDouble(str1);
                     double d2 = Double.parseDouble(str2);
                     double d3 = d1 - d2;
