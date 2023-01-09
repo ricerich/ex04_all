@@ -35,36 +35,73 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv1 = findViewById(R.id.tv1);
 
-        //2.이벤트 처리 : 버튼들에 대해서
+//        버튼객체1.set리스너하는_메소드(리스너객체);
+//        a1.set(b1);
+//        View.OnTouchListener lis1 = new View.OnTouchListener() ;
 
-        btn1.setOnTouchListener(new View.OnTouchListener() {
+        //1단계
+//        class A implements View.OnTouchListener
+//        {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                Toast.makeText(getApplicationContext(), "클릭!!", Toast.LENGTH_SHORT).show();
+//                return false;
+//            }
+//        }
+//
+//        A a1 = new A();
+//        btn1.setOnTouchListener(a1);
+
+        //2단계
+//        View.OnTouchListener b1 = new View.OnTouchListener(){
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                Toast.makeText(getApplicationContext(), "클릭!!", Toast.LENGTH_SHORT).show();
+//                return false;
+//            }
+//        };
+//
+//        btn1.setOnTouchListener(b1);
+
+        //3단계
+        btn1.setOnTouchListener(new View.OnTouchListener(){
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                String str1 = edt1.getText().toString();
-                String str2 = edt2.getText().toString();
-
-                if(str1.equals("") || str2.equals(""))
-                {
-                    Toast.makeText(MainActivity.this,"값을 입력해주셔요!",Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-//                    int n1 = Integer.parseInt(str1);
-//                    int n2 = Integer.parseInt(str2);
-//                    int n3 = n1 + n2;
-
-                    double d1 = Double.parseDouble(str1);
-                    double d2 = Double.parseDouble(str2);
-                    double d3 = d1 + d2;
-
-                    tv1.setText("결과는: "+d3);
-                }
-
-
-
+                Toast.makeText(getApplicationContext(), "333333", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
+
+        //2.이벤트 처리 : 버튼들에 대해서
+
+//        btn1.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                String str1 = edt1.getText().toString();
+//                String str2 = edt2.getText().toString();
+//
+//                if(str1.equals("") || str2.equals(""))
+//                {
+//                    Toast.makeText(MainActivity.this,"값을 입력해주셔요!",Toast.LENGTH_SHORT).show();
+//                }
+//                else
+//                {
+////                    int n1 = Integer.parseInt(str1);
+////                    int n2 = Integer.parseInt(str2);
+////                    int n3 = n1 + n2;
+//
+//                    double d1 = Double.parseDouble(str1);
+//                    double d2 = Double.parseDouble(str2);
+//                    double d3 = d1 + d2;
+//
+//                    tv1.setText("결과는: "+d3);
+//                }
+//
+//
+//
+//                return false;
+//            }
+//        });
 
         btn2.setOnTouchListener(new View.OnTouchListener() {
             @Override
