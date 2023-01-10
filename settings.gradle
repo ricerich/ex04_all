@@ -16,3 +16,4 @@ rootProject.name = "ex04_01"
 include ':app'
 include ':ex04_calc'
 include ':ex05_1_2'
+include ':ex05_3'
