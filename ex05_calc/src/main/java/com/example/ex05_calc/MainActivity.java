@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main_grid1);
+        setContentView(R.layout.activity_main_grid2);
 
         //지역변수 (onCreate메소드의)
 
@@ -37,16 +39,16 @@ public class MainActivity extends AppCompatActivity {
 
         //5-1숫자버튼 java객체 만들기, xml객체 가져와서 바인딩(findViewById메소드)
 
-        Button btnNum0 = findViewById(R.id.num0);
-        Button btnNum1 = findViewById(R.id.num1);
-        Button btnNum2 = findViewById(R.id.num2);
-        Button btnNum3 = findViewById(R.id.num3);
-        Button btnNum4 = findViewById(R.id.num4);
-        Button btnNum5 = findViewById(R.id.num5);
-        Button btnNum6 = findViewById(R.id.num6);
-        Button btnNum7 = findViewById(R.id.num7);
-        Button btnNum8 = findViewById(R.id.num8);
-        Button btnNum9 = findViewById(R.id.num9);
+//        Button btnNum0 = findViewById(R.id.num0);
+//        Button btnNum1 = findViewById(R.id.num1);
+//        Button btnNum2 = findViewById(R.id.num2);
+//        Button btnNum3 = findViewById(R.id.num3);
+//        Button btnNum4 = findViewById(R.id.num4);
+//        Button btnNum5 = findViewById(R.id.num5);
+//        Button btnNum6 = findViewById(R.id.num6);
+//        Button btnNum7 = findViewById(R.id.num7);
+//        Button btnNum8 = findViewById(R.id.num8);
+//        Button btnNum9 = findViewById(R.id.num9);
 
         //개별 버튼 10개를 1개의 객체배열에 넣고, 배열 멤버로 만든다.
         //객체 배열
