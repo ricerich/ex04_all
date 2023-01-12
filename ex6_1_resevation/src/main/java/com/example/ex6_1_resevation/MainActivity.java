@@ -19,7 +19,6 @@ import android.widget.TimePicker;
 public class MainActivity extends AppCompatActivity {
 
 //    int nYear, nMonth, nDay;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
