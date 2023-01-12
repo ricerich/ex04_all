@@ -113,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
             tabName = data.getString("tabName");
         }
 
+        
         @Nullable
         @Override
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
