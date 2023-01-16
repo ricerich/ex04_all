@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 dlg.setTitle("좋아하는 버전은?");
                 dlg.setIcon(R.mipmap.ic_launcher);
 
-
                 dlg.setMultiChoiceItems(versionArray, checkArray,
                         new DialogInterface.OnMultiChoiceClickListener() {
                             public void onClick(DialogInterface dialog,
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
                                         cnt++;
                                     }
-
                                 }
 //                                button1.setText(versionArray[which]);
                                 button1.setText(str1);
