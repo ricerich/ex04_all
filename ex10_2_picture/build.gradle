@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.ex07_4_dialog_login'
+    namespace 'com.example.ex10_2_picture'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.ex07_4_dialog_login"
+        applicationId "com.example.ex10_2_picture"
         minSdk 21
         targetSdk 33
         versionCode 1
