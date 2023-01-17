@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Log.i("여기", "11111111 온크리에이트");
 
         EditText edt1 = findViewById(R.id.edtNum1);
         EditText edt2 = findViewById(R.id.edtNum2);
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.i("여기", "222222온클릭메인");
                 Intent intent1 = new Intent(MainActivity.this, SecondActivity.class );
                 String str1 = edt1.getText().toString();
                 String str2 = edt2.getText().toString();
@@ -69,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
+        Log.i("여기", "55555 메인 onResult");
         if(resultCode == RESULT_OK){
             int result = data.getIntExtra("Result1", 0);
             Toast.makeText(getApplicationContext(), "결과:"+result, Toast.LENGTH_SHORT).show();;

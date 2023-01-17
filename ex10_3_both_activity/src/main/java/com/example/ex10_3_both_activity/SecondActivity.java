@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,6 +15,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         setTitle("두번째");
+        Log.i("여기", "22222222세컨드 온크리");
 
         Intent intent1 = getIntent();
 
@@ -43,6 +45,7 @@ public class SecondActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.i("여기", "4444444 세컨트 온클릭");
                 Intent intent1 = new Intent(getApplicationContext(), MainActivity.class);
                 intent1.putExtra("Result1", finalNResult);
                 setResult(RESULT_OK,intent1);
